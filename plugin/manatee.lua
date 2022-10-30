@@ -3,17 +3,20 @@ if vim.g.loaded_manatee == 1 then
 end
 vim.g.loaded_manatee = 1
 
-local manatee_state = require'manatee.state'
-local manatee_picker = require'manatee.picker'
+local manatee = require'manatee'
 
-vim.api.nvim_create_user_command('ManateeRoot', function(opts)
+vim.api.nvim_create_user_command('Manatee', function(opts)
   local val = opts.args
   if val == nil or val == "" then
-    -- TODO: Log
+    manatee.print_vwd()
     return
   end
-  manatee_state.set_subcwd(val)
+  manatee.set_vwd(val)
 end, {
   nargs = '?',
   complete = 'dir'
 })
+
+vim.api.nvim_create_user_command('ManateeReset', function(_)
+  manatee.reset_vwd()
+end, {})
