@@ -41,3 +41,18 @@ vim.api.nvim_set_keymap('n', '<Leader>ff', '<cmd>lua require"telescope".extensio
 vim.api.nvim_set_keymap('n', '<Leader>fg', '<cmd>lua require"telescope".extensions.manatee.live_grep{}<CR>', opts)
 ```
 
+## Installing
+
+manatee.nvim requires Neovim and follows the standard runtime package structure.
+It is possible to install it with all popular package managers:
+
+* [vim-plug](https://github.com/junegunn/vim-plug)
+  * `Plug 'prichrd/manatee.nvim'`
+* [packer](https://github.com/wbthomason/packer.nvim)
+  * `use 'prichrd/manateee.nvim'`
+
+## Usage
+
+The documentation can be found at [doc/manatee.txt](doc/manatee.txt). You can also
+use the `:help manatee.nvim` command inside of Neovim.
+
