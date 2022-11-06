@@ -2,7 +2,7 @@
 
 This plugin provides a set of tools for working with monorepos:
 
-* Set the virtual working directory (`VWD`) with `:Manatee <directory>`
+* Set the Virtual Working Directory (`VWD`) with `:Manatee <directory>`
 * Print the `VWD` with `:Manatee`
 * Reset the `VWD` with `:ManateeReset`
 * Extend Telescope's `file_finder` and `live_grep` finders to search from `VWD`
